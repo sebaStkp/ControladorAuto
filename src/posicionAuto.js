@@ -1,11 +1,14 @@
 function verificarFormato(cadena){
     var result = false;
     if(typeof cadena == "string"){
-        result = true;
+        var formatoValido = /^\d+,\d+$/;
+        if(formatoValido.test(cadena))
+        {
+            result = true;
+        }
     }
     return result;
 }
-
 
 
 function posAuto(coordenadas){

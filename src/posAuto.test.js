@@ -7,6 +7,12 @@ describe("Posicion del auto", () => {
     it("Solo permite cadenas" , () => {
       expect(posAuto(88)).toEqual("Formato incorrecto");
     });
+    it("Solo permite el formato establecido: 'x,y' " , () => {
+      expect(posAuto("1,2")).toEqual("1,2");
+    });
+    it("Solo permite el formato establecido: 'x,y' " , () => {
+      expect(posAuto("1/2")).toEqual("Formato incorrecto");
+    });
   });
   
 
