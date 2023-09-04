@@ -42,7 +42,9 @@ export function ejecutarComando(comandos, automovil){
             else if(automovil.getOrientacion == "S"){
                 automovil.setPosY = -1;
             }
-            
+            else if(automovil.getOrientacion == "O"){
+                automovil.setPosX = -1;
+            }
         }
     }
     return automovil.getOrientacion;
