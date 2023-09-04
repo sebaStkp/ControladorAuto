@@ -1,7 +1,10 @@
 function verificarFormatoAuto(comandos){
     var result = false;
     if(typeof comandos == "string"){
-        result = true;
+        var formatoComs = /^[IDA]+$/;
+        if(formatoComs.test(comandos)){
+            result = true;
+        }
     }
     return result;
 }

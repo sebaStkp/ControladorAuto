@@ -18,6 +18,5 @@ form.addEventListener("submit", (event) => {
     div.innerHTML = "<p>" + "Pos: " + posAuto(posIni) + "</p>";
   }
   div.innerHTML += "<p>" + "Comandos: " + comsAuto(comandos) + "</p>";
-  console.log(comandos);
  
 });
