@@ -16,7 +16,12 @@ export function ejecutarComando(comandos, automovil){
     for(var i = 0; i < coms.length; i++){
         if(coms[i] == "I"){
             var posBusqueda = puntosCardinales.indexOf(automovil.getOrientacion);//busca en puntosCardinales la posicion donde esta la letra indicada(en este caso I)
-            automovil.setOrientacion = puntosCardinales[posBusqueda+1]+"";
+            if(posBusqueda != puntosCardinales.length-1){
+                automovil.setOrientacion = puntosCardinales[posBusqueda+1]+"";
+            }
+            else{
+                automovil.setOrientacion = puntosCardinales[0]+"";
+            }
         }
     }
     return automovil.getOrientacion;
