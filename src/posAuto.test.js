@@ -49,6 +49,7 @@ describe("Posicion del auto", () => {
       expect(automovil.getLimX).toEqual(1);
       expect(automovil.getLimY).toEqual(2);
     });
+    
   });
   
 
