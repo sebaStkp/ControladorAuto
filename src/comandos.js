@@ -36,6 +36,9 @@ export function ejecutarComando(comandos, automovil){
             if(automovil.getOrientacion == "N"){
                 automovil.setPosY = 1;
             }
+            else if(automovil.getOrientacion == "E"){
+                automovil.setPosX = 1;
+            }
         }
     }
     return automovil.getOrientacion;
