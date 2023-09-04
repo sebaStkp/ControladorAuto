@@ -23,6 +23,15 @@ export function ejecutarComando(comandos, automovil){
                 automovil.setOrientacion = puntosCardinales[0]+"";
             }
         }
+        else if(coms[i] == "D"){
+            var posBusqueda = puntosCardinales.indexOf(automovil.getOrientacion);
+            if(posBusqueda != 0){
+                automovil.setOrientacion = puntosCardinales[posBusqueda-1]+"";
+            }
+            else{
+                automovil.setOrientacion = puntosCardinales[puntosCardinales.length-1]+"";
+            }
+        }
     }
     return automovil.getOrientacion;
 }
