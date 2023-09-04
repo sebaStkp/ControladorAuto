@@ -1,3 +1,5 @@
+import auto from "./auto";
+
 function verificarFormato(cadena){
     var result = false;
     if(typeof cadena == "string"){
@@ -9,7 +11,6 @@ function verificarFormato(cadena){
     }
     return result;
 }
-
 function posAuto(coordenadas){
     var pos;
     if(verificarFormato(coordenadas)){

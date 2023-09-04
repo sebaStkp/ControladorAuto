@@ -12,7 +12,7 @@ class auto{
         //atributos clase
         this.posX=posX;
         this.posY=posY;
-        this.orientacion = orientacion;
+        this.orientacion=orientacion;
     }
     get getPosX(){
         return this.posX;
@@ -30,7 +30,7 @@ class auto{
         this.posY += aumento;
     }
     set setOrientacion(newOrientacion){
-        this.orientacion = newOrientacion;
+        this.orientacion = newOrientacion ;
     }
 
 }
