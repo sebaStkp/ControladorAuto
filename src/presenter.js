@@ -1,5 +1,6 @@
 import posAuto from "./posicionAuto";
 import comsAuto from "./comandos";
+
 const posicionInicial = document.querySelector("#pos-ini");
 const comandosAuto = document.querySelector("#coms-auto");
 const form = document.querySelector("#controlador-auto");
