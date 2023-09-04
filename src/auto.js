@@ -1,5 +1,5 @@
 class auto{
-    constructor(cadena){
+    constructor(cadena, limites="-1,-1"){
         //saca la orientacion, posx y posy
         var orientacion = cadena[cadena.length-1];
         var cad = cadena + "";
@@ -9,10 +9,21 @@ class auto{
         var posY = coordenadas[1];
         posX = parseInt(posX);
         posY = parseInt(posY);
+        
+        //saca limites de x e y
+        var lim = limites + "";
+        lim = lim.split(",");
+        var limX = lim[0];
+        var limY = lim[1];
+        limX = parseInt(limX);
+        limY = parseInt(limY);
+  
         //atributos clase
         this.posX=posX;
         this.posY=posY;
         this.orientacion=orientacion;
+        this.limX=limX;
+        this.limY=limY;
     }
     get getPosX(){
         return this.posX;
@@ -23,6 +34,13 @@ class auto{
     get getOrientacion(){
         return this.orientacion;
     }
+    get getLimX(){
+        return this.limX;
+    }
+    get getLimY(){
+        return this.limY;
+    }
+
     set setPosX(aumento){
         this.posX += aumento;
     }
@@ -32,6 +50,7 @@ class auto{
     set setOrientacion(newOrientacion){
         this.orientacion = newOrientacion ;
     }
+
 
 }
 

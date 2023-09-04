@@ -59,4 +59,6 @@ describe("Comandos para mover el auto", () => {
         ejecutarComando("A",automovil);
         expect(automovil.getPosX).toEqual(4);
     });
+    
+    
   });

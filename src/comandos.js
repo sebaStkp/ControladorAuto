@@ -33,7 +33,7 @@ export function ejecutarComando(comandos, automovil){
             }
         }
         else if(coms[i] == "A"){
-            if(automovil.getOrientacion == "N"){
+            if(automovil.getOrientacion == "N" ){
                 automovil.setPosY = 1;
             }
             else if(automovil.getOrientacion == "E"){
