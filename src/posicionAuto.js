@@ -1,7 +1,7 @@
 function verificarFormato(cadena){
     var result = false;
     if(typeof cadena == "string"){
-        var formatoValido = /^\d+,\d+$/;
+        var formatoValido = /^\d+,\d+[N]$/;
         if(formatoValido.test(cadena))
         {
             result = true;
@@ -9,7 +9,6 @@ function verificarFormato(cadena){
     }
     return result;
 }
-
 
 function posAuto(coordenadas){
     var pos;
@@ -23,5 +22,6 @@ function posAuto(coordenadas){
 }
 
 export default posAuto;
+
 
 
