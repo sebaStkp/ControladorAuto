@@ -1,7 +1,7 @@
 function verificarFormato(cadena){
     var result = false;
     if(typeof cadena == "string"){
-        var formatoValido = /^\d+,\d+[N]$/;
+        var formatoValido = /^\d+,\d+[NS]$/;
         if(formatoValido.test(cadena))
         {
             result = true;
