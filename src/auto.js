@@ -17,9 +17,17 @@ class auto{
     get getPosX(){
         return this.posX;
     }
+    get getPosY(){
+        return this.posY;
+    }
     set setPosX(aumento){
         this.posX += aumento;
     }
+    set setPosY(aumento){
+        this.posY += aumento;
+    }
+
+
 }
 
 export default auto;
