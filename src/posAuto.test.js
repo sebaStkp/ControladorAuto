@@ -16,8 +16,11 @@ describe("Posicion del auto", () => {
     it("Se añade la orientacion N en la posicion inicial, y solo deja ingresar un formato establecido x,yN" , () => {
       expect(posAuto("2,5N")).toEqual("2,5N");
     });
-    it("Se añade la orientacion S en la posicion inicial, y solo deja ingresar un formato establecido x,yN" , () => {
+    it("Se añade la orientacion S en la posicion inicial, y solo deja ingresar un formato establecido x,yS" , () => {
       expect(posAuto("2,5S")).toEqual("2,5S");
+    });
+    it("Se añade la orientacion E en la posicion inicial, y solo deja ingresar un formato establecido x,yO" , () => {
+      expect(posAuto("2,5O")).toEqual("2,5O");
     });
   });
   
