@@ -20,13 +20,18 @@ class auto{
     get getPosY(){
         return this.posY;
     }
+    get getOrientacion(){
+        return this.orientacion;
+    }
     set setPosX(aumento){
         this.posX += aumento;
     }
     set setPosY(aumento){
         this.posY += aumento;
     }
-
+    set setOrientacion(newOrientacion){
+        this.orientacion = newOrientacion;
+    }
 
 }
 
