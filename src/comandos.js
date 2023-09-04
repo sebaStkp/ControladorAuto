@@ -32,6 +32,11 @@ export function ejecutarComando(comandos, automovil){
                 automovil.setOrientacion = puntosCardinales[puntosCardinales.length-1]+"";
             }
         }
+        else if(coms[i] == "A"){
+            if(automovil.getOrientacion == "N"){
+                automovil.setPosY = 1;
+            }
+        }
     }
     return automovil.getOrientacion;
 }
