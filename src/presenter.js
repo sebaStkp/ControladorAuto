@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
   else{
     const automovil = new auto(posAuto(posIni));
     var coordenada = automovil.getPosX + "," + automovil.getPosY;
-    div.innerHTML = "<p>" + "Pos: " + automovil.mostrarCoords() + "</p>";
+    div.innerHTML = "<p>" + "Pos: " + posAuto(posIni) + "</p>";
     div.innerHTML += "<p>" + "Comandos: " + comsAuto(comandos) + "</p>";
     coordenada += ejecutarComando(comsAuto(comandos),automovil);
     div.innerHTML += "<p>" + "Pos final: " + coordenada + "</p>";
