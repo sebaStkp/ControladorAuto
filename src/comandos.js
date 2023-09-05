@@ -33,16 +33,20 @@ export function ejecutarComando(comandos, automovil){
             }
         }
         else if(coms[i] == "A"){
-            if(automovil.getOrientacion == "N"  || automovil.getLimY == -1 && automovil.getPosY+1 <= automovil.getLimY){
-                automovil.setPosY = 1;
+            if(automovil.getOrientacion == "N"){
+                if(automovil.getLimY == -1 || automovil.getPosY+1 <= automovil.getLimY){
+                    automovil.setPosY = 1;
+                }
             }
-            else if(automovil.getOrientacion == "E" || automovil.getLimX == -1 && automovil.getPosX+1 <= automovil.getLimX){
+            else if(automovil.getOrientacion == "E"){
                 automovil.setPosX = 1;
             }
-            else if(automovil.getOrientacion == "S" || automovil.getLimY == -1 && automovil.getPosY-1 <= 0){
-                automovil.setPosY = -1;
+            else if(automovil.getOrientacion == "S"){
+                if(automovil.getLimY == -1 || automovil.getPosY-1 >= 0){
+                    automovil.setPosY = -1;
+                }
             }
-            else if(automovil.getOrientacion == "O" || automovil.getLimY == -1 && automovil.getPosX-1 <= 0){
+            else if(automovil.getOrientacion == "O"){
                 automovil.setPosX = -1;
             }
         }
