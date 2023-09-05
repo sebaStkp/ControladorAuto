@@ -16,23 +16,28 @@ describe("Comandos para mover el auto", () => {
     });
     it("Ejecuta el comando I", () => {
         const automovil = new auto("5,8N");
-        expect(ejecutarComando("I",automovil)).toEqual("O");
+        ejecutarComando("I",automovil);
+        expect(automovil.getOrientacion).toEqual("O");
     });
     it("Ejecuta el comando I incorrectamente", () => {
         const automovil = new auto("5,8N");
-        expect(ejecutarComando("Z",automovil)).toEqual("N");
+        ejecutarComando("Z",automovil);
+        expect(automovil.getOrientacion).toEqual("N");
     });
     it("Ejecuta el comando I con una pos inicial de 5,8E", () => {
         const automovil = new auto("5,8E");
-        expect(ejecutarComando("I",automovil)).toEqual("N");
+        ejecutarComando("I",automovil);
+        expect(automovil.getOrientacion).toEqual("N");
     });
     it("Ejecuta el comando D", () => {
         const automovil = new auto("5,8O");
-        expect(ejecutarComando("D",automovil)).toEqual("N");
+        ejecutarComando("D",automovil);
+        expect(automovil.getOrientacion).toEqual("N");
     });
     it("Ejecuta el comando D con coordenadas 5,8N, deberia moverse al E", () => {
         const automovil = new auto("5,8EN");
-        expect(ejecutarComando("D",automovil)).toEqual("E");
+        ejecutarComando("D",automovil);
+        expect(automovil.getOrientacion).toEqual("E");
     });
     it("Ejecuta el comando A con orientacion N", () => {
         const automovil = new auto("5,8N");

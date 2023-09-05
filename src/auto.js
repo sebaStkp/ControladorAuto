@@ -50,7 +50,10 @@ class auto{
     set setOrientacion(newOrientacion){
         this.orientacion = newOrientacion ;
     }
-
+    mostrarPosicion(){
+        const posicion = this.posX + "," + this.posY + this.orientacion;
+        return posicion;
+    }
 
 }
 

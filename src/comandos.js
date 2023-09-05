@@ -54,7 +54,7 @@ export function ejecutarComando(comandos, automovil){
             }
         }
     }
-    return automovil.getOrientacion;
+    return comandos;
 }
 
 export function comsAuto(comandos){
