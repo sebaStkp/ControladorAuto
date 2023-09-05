@@ -39,6 +39,7 @@ export function ejecutarComando(comandos, automovil){
                 }
             }
             else if(automovil.getOrientacion == "E"){
+                if(automovil.getLimX == -1 || automovil.getPosX+1 <= automovil.getLimX)
                 automovil.setPosX = 1;
             }
             else if(automovil.getOrientacion == "S"){
@@ -47,7 +48,9 @@ export function ejecutarComando(comandos, automovil){
                 }
             }
             else if(automovil.getOrientacion == "O"){
-                automovil.setPosX = -1;
+                if(automovil.getLimY == -1 || automovil.getPosX-1 >= 0){
+                    automovil.setPosX = -1;
+                }
             }
         }
     }
