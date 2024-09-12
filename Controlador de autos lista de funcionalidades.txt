@@ -1,0 +1,23 @@
+- Permitir que el usuario ingrese la posicion inicial del auto y mostrarla. -> boton 	
+- Validar que la posicion inicial siga el formato establecido().	
+- No deja ingresar nada en caso de que sea un formato no establecido y refresca la pagina	
+- Permitir que el usuario ingrese los comandos y los muestre.	
+- Validar que los comandos sigan el formato establecido. 	
+
+- Se añade la orientacion en N para la posicion inicial y se muestra	
+- Se añade la orientacion en S para la posicion inicial y se muestra	
+- Se añade la orientacion en E para la posicion inicial y se muestra	
+- Se añade la orientacion en O para la posicion inicial y se muestra
+	
+- Se puede ejecutar el comando I y se muestra 
+- Se puede ejecutar el comando D y se muestra 
+- Se puede ejecutar el comando A y se muestra
+- Ignorar comando si es que el auto se sale de la superficie 	
+
+- Unir en una sola funcion las coordenadas iniciales del auto + ubicacion(Refactoring) 	
+- Luego del conjunto de comandos mostrar la posicion final -> boton ejecutar
+
+
+
+
+
