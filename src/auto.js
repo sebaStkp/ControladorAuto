@@ -8,7 +8,7 @@ class auto{
         var posX = coordenadas[0];
         var posY = coordenadas[1];
         posX = parseInt(posX);
-        posY = parseInt(posY);
+        posY = parseInt(posY); 
         
         //saca limites de x e y
         var lim = limites + "";
@@ -18,7 +18,7 @@ class auto{
         limX = parseInt(limX);
         limY = parseInt(limY);
   
-        //atributos clase
+        //atributos clase prueba sjsjsj
         this.posX=posX;
         this.posY=posY;
         this.orientacion=orientacion;
